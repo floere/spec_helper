@@ -5,19 +5,23 @@ IMPORTANT NOTE: This is not to be taken seriously! It is an idea I had after 63 
 h2. Motivation
 
 Are you tired by having to do
-require File.join( File.expand_path(File.dirname(__FILE__)), 'spec_helper' )
+
+@require File.join( File.expand_path(File.dirname(__FILE__)), 'spec_helper' )@
+
 on top of each spec file to require the spec_helper?
 
 h2. Usage
 
 Gemfile:
-gem 'spec_helper'
+
+@gem 'spec_helper'@
 
 Spec file:
-require 'spec_helper'
+
+@require 'spec_helper'@
 
 h2. Other note
 
-Please hold the tomatoes. Thanks!
+Please hold the tomatoes. Thanks! ;)
 
 If someone wants the Gem name for serious purposes, please contact me and I will give it to you.
