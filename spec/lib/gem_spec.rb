@@ -8,9 +8,9 @@ require 'spec'
 describe 'requiring spec_helper' do
   it 'should require the spec_helper if spec_helper is required' do
     caller_dir = File.dirname __FILE__
-    test_file = File.expand_path(File.join(caller_dir, '..', '..', 'lib', 'spec_helper.rb'))
+    gem_init_file = File.expand_path(File.join(caller_dir, '..', '..', 'lib', 'spec_helper.rb'))
     
-    load test_file
+    require gem_init_file
   end
 end
 
